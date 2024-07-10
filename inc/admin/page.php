@@ -252,3 +252,9 @@ function af_add_container_plugin($plugin_array)
     $plugin_array['af_footnotes'] = plugin_dir_url(__FILE__) . '/mce-button.js';
     return $plugin_array;
 }
+
+
+if (is_admin()) { // admin actions
+	add_action( 'admin_menu', 'af_menu' );
+	add_action( 'admin_init', 'af_register_settings' );
+}
