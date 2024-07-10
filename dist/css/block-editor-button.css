@@ -1,0 +1,22 @@
+.af-admin-button {
+  background-image: url(../images/text-footnote.svg?ff74c27e2b5d41a0491a5032af6d0262) !important;
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+}
+
+.block-editor-rich-text__editable > af:first-of-type::before {
+  content: "footnote";
+  color: #888;
+  font-size: 12px;
+  position: relative;
+  top: -5px;
+  margin-right: 3px;
+  margin-left: 3px;
+}
+
+af {
+  background: #ccc;
+}
+

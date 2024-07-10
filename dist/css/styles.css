@@ -1,0 +1,96 @@
+.af-footnote {
+  padding-left: 2px;
+  padding-right: 2px;
+  line-height: initial;
+}
+
+.af-footnote--selected {
+  background: #eee;
+  border-radius: 2px;
+}
+
+.af-footnote__connector {
+  background: #000;
+  position: absolute;
+  width: 0.9px;
+}
+
+.af-footnote a {
+  text-decoration: none;
+}
+
+.af-footnote__note {
+  display: none;
+  font-size: 80%;
+  color: #777;
+}
+
+.af-footnote__note a {
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+}
+
+.af-footnote__note--tooltip {
+  position: absolute;
+  left: 0;
+  border: 1px solid #666;
+  background: #fff;
+  padding: 0.7em 1em;
+  border-radius: 3px;
+  max-width: 300px;
+  box-shadow: 1px 1px 1px #eee;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.af-footnote__note--tooltip:focus {
+  /* remove focus style for tooltip */
+  outline: none;
+}
+
+.af-footnote__note--expandable {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.af-list {
+  list-style-type: none;
+  font-size: 1em;
+  margin: 1em 0;
+  padding-left: 0;
+}
+
+.af-list li {
+  display: flex;
+  margin-bottom: 0.3em;
+}
+
+.af-list li > sup {
+  margin-right: 1em;
+  color: #777;
+  word-wrap: normal;
+  word-break: normal;
+}
+
+.af-list--show-only-for-print,
+.af-list-heading--show-only-for-print {
+  display: none;
+}
+
+@media print {
+  .af-list--show-only-for-print,
+  .af-list-heading--show-only-for-print {
+    display: block;
+  }
+
+  .af-list--hide-for-print,
+  .af-list-heading--hide-for-print {
+    display: none;
+  }
+}
+
