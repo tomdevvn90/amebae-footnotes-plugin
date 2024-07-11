@@ -16,7 +16,15 @@ function af_footnotes_options()
         wp_die(__('You do not have sufficient permissions to access this page.'));
     }
     echo '<div class="wrap">';
-    echo '<h1>' . esc_html__('Settings', 'footnotes') . '</h1>';
+    echo '<h2>Instructions</h2>';
+    echo '<p>Use a footnote in your post by using the footnote icon in the WordPress editor or by using the shortcode: <code><b>[af]this will be a footnote[/af]</b></code></br> The plugin will automatically associate sequential numbers with each plugin.</p>';
+    echo '<p>On desktop, footnotes will appear as a tooltip when the user clicks on the number. On mobile, footnotes will expand as a section below the current text.</p>';
+    echo '<p>You can also use the <code><b>[af_list]</b></code> shortcode to display a list of footnotes used in the article.</p>';
+    echo '<h3>Shortcodes</h3>';
+    echo '<p>You can modify some behaviours or styles of your footnotes by using the following options within our shortcode.</p>';
+    echo '<p><code><b>[af referencenumber=3]This footnote will have the number 3[/af]</b></code></p>';
+    echo '<p><code><b>[af class=’my-custom-class’]This footnote will have ‘my-custom-class’ as additional class, allowing for custom styling of individual footnotes.[/af]</b></code></p>';
+    echo '<p><code><b>[af referencereset=’true’]This footnote will reset the footnote counter and therfore receive 1 as its number. Following footnotes will also receive their number according to this new start.[/af]</b></code></p>';
     echo '<form method="post" action="options.php">';
     settings_fields('af_settings_options');
     do_settings_sections(__FILE__);
@@ -255,6 +263,6 @@ function af_add_container_plugin($plugin_array)
 
 
 if (is_admin()) { // admin actions
-	add_action( 'admin_menu', 'af_menu' );
-	add_action( 'admin_init', 'af_register_settings' );
+    add_action('admin_menu', 'af_menu');
+    add_action('admin_init', 'af_register_settings');
 }

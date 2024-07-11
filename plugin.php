@@ -22,6 +22,10 @@ if (!defined('PLUGIN_DIR_PATH')) {
     define('PLUGIN_DIR_PATH', plugin_dir_path(__FILE__)); 
 }
 
+if (!defined('PLUGIN_BASENAME')) {
+    define('PLUGIN_BASENAME', plugin_basename(__FILE__)); 
+}
+
 if (!defined('VERSION')) {
     define('VERSION', '1.0.0');
 }
@@ -37,3 +41,5 @@ require_once PLUGIN_DIR_PATH . 'inc/filters.php';
 require_once PLUGIN_DIR_PATH . 'inc/hooks.php';
 require_once PLUGIN_DIR_PATH . 'inc/functions.php';
 require_once PLUGIN_DIR_PATH . 'inc/shortcodes.php';
+
+

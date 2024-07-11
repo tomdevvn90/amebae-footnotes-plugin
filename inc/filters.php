@@ -120,3 +120,11 @@ function af_strip_rendered_tag($content)
 add_filter('wp_trim_words', 'af_strip_rendered_tag');
 
 
+add_filter('plugin_action_links_' . PLUGIN_BASENAME, 'apd_settings_link');
+function apd_settings_link(array $links)
+{
+    $url = get_admin_url() . "options-general.php?page=amebae-footnotes%2Finc%2Fadmin%2Fpage.php";
+    $settings_link = '<a href="' . $url . '">' . __('Settings', 'footnotes') . '</a>';
+    $links[] = $settings_link;
+    return $links;
+}
