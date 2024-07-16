@@ -11,7 +11,7 @@ Below you will find some information on how to run scripts.
 Shortcode options
 
 You can modify some behaviours or styles of your footnotes by using the following options within our shortcode.
-##[af referencenumber=3]This footnote will have the number 3[/af]
+##[af]This footnote will automatically numbered[/af]
 
 ##[af class=’my-pretty-class’]This footnote will have ‘my-pretty-class’ as additional class, allowing for custom styling of individual footnotes.[/af]
 

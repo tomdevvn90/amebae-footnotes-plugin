@@ -143,7 +143,7 @@ function af_list_footnotes($show_only_when_printing = FALSE, $hide_when_printing
             . '">' . $af_settings_options['af_heading_footnote_list'] . '</' . $tag_name . '>';
     }
 
-    $content .= '<ul class="af-list ' . ($show_only_when_printing ? 'af-list--show-only-for-print' : '') . ($hide_when_printing ? 'af-list--hide-for-print' : '') . '">';
+    $content .= '<h4>References:</h4><ul class="af-list ' . ($show_only_when_printing ? 'af-list--show-only-for-print' : '') . ($hide_when_printing ? 'af-list--hide-for-print' : '') . '">';
 
     foreach ($footnotes_used as $footnote_list) {
         foreach ($footnote_list as $index => $f_content) {
