@@ -46,6 +46,7 @@
             // color: #000;
             font-size: 90%;
             font-weight: 400;
+            line-height: 145%;
 
             &:focus {
                 /* remove focus style for tooltip */
@@ -66,12 +67,12 @@
     list-style-type: none !important;
     font-size: 1em;
     margin: 1em 0;
-    padding-left: 0;
+    padding-left: 25px !important;
 
     li {
         display: flex;
-        margin-bottom: 0.3em;
-        font-size: 90% !important;
+        margin-bottom: 0.4em !important;
+        font-size: 80% !important;
         font-weight: 400 !important;
         padding-left: 0 !important;
 

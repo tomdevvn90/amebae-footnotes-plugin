@@ -148,9 +148,9 @@ function af_list_footnotes($show_only_when_printing = FALSE, $hide_when_printing
     foreach ($footnotes_used as $footnote_list) {
         foreach ($footnote_list as $index => $f_content) {
             $content .= '<li>';
-            $content .= '<sup>' . $index . ' </sup>';
+            // $content .= '<sup>' . $index . ' </sup>';
             $content .= '<div>';
-            $content .= $f_content;
+            $content .= $index . '. ' . $f_content;
             $content .= '</div>';
             $content .= '</li>';
         }

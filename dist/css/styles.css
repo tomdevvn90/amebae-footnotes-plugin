@@ -48,6 +48,7 @@
   /* color: #000; */
   font-size: 90%;
   font-weight: 400;
+  line-height: 145%;
 }
 
 .af-footnote__note--tooltip:focus {
@@ -70,10 +71,10 @@
 
 .af-list li {
   display: flex;
-  margin-bottom: 0.3em;
-  font-size: 90% !important;
+  margin-bottom: 0.4em !important;
+  font-size: 80% !important;
   font-weight: 400 !important;
-  padding-left: 0 !important;
+  padding-left: 25px !important;
 }
 
 .af-list li::before {
