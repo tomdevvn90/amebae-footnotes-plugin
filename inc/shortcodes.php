@@ -6,7 +6,7 @@ function af_list_func($atts = [], $content = "")
     return '[af_list_execute_after_content_processed]';
 }
 
-add_shortcode('af_list', 'af_list_func');
+add_shortcode('fn_list', 'af_list_func');
 
 
 function af_rss_func($atts, $content = "")

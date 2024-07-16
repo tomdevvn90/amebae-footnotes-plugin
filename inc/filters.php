@@ -45,8 +45,8 @@ add_filter('the_content', 'af_execute_list_shortcode', 12);
 
 function af_replace_tag_with_shortcode($content)
 {
-    $content = str_replace('</af>', '<af>', $content);
-    $content_parts = explode('<af>', $content);
+    $content = str_replace('</fn>', '<fn>', $content);
+    $content_parts = explode('<fn>', $content);
     $content_data = array();
 
     $inFootnote = FALSE;
@@ -72,16 +72,16 @@ function af_replace_tag_with_shortcode($content)
     foreach ($content_data as $cd) {
         if ($cd['inFootnote'] && !$inFootnote) {
             $inFootnote = TRUE;
-            $final_content .= '[af]';
+            $final_content .= '[fn]';
         } else if ($inFootnote && !$cd['inFootnote']) {
             $inFootnote = FALSE;
-            $final_content .= '[/af]';
+            $final_content .= '[/fn]';
         }
 
         $final_content .= $cd['content'];
     }
     if ($inFootnote) {
-        $final_content .= '[/af]';
+        $final_content .= '[/fn]';
     }
     return $final_content;
 }

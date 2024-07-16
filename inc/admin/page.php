@@ -17,14 +17,14 @@ function af_footnotes_options()
     }
     echo '<div class="wrap">';
     echo '<h2>Instructions</h2>';
-    echo '<p>Use a footnote in your post by using the footnote icon in the WordPress editor or by using the shortcode: <code><b>[af]this will be a footnote[/af]</b></code></br> The plugin will automatically associate sequential numbers with each plugin.</p>';
+    echo '<p>Use a footnote in your post by using the footnote icon in the WordPress editor or by using the shortcode: <code><b>[fn]this will be a footnote[/fn]</b></code></br> The plugin will automatically associate sequential numbers with each plugin.</p>';
     echo '<p>On desktop, footnotes will appear as a tooltip when the user clicks on the number. On mobile, footnotes will expand as a section below the current text.</p>';
-    echo '<p>You can also use the <code><b>[af_list]</b></code> shortcode to display a list of footnotes used in the article.</p>';
+    echo '<p>You can also use the <code><b>[fn_list]</b></code> shortcode to display a list of footnotes used in the article.</p>';
     echo '<h3>Shortcodes</h3>';
     echo '<p>You can modify some behaviours or styles of your footnotes by using the following options within our shortcode.</p>';
-    echo '<p><code><b>[af]This footnote will automatically numbered[/af]</b></code></p>';
-    echo '<p><code><b>[af class=’my-custom-class’]This footnote will have ‘my-custom-class’ as additional class, allowing for custom styling of individual footnotes.[/af]</b></code></p>';
-    echo '<p><code><b>[af referencereset=’true’]This footnote will reset the footnote counter and therfore receive 1 as its number. Following footnotes will also receive their number according to this new start.[/af]</b></code></p>';
+    echo '<p><code><b>[fn]This footnote will automatically numbered[/fn]</b></code></p>';
+    echo '<p><code><b>[fn class=’my-custom-class’]This footnote will have ‘my-custom-class’ as additional class, allowing for custom styling of individual footnotes.[/fn]</b></code></p>';
+    echo '<p><code><b>[fn referencereset=’true’]This footnote will reset the footnote counter and therfore receive 1 as its number. Following footnotes will also receive their number according to this new start.[/fn]</b></code></p>';
     echo '<form method="post" action="options.php">';
     settings_fields('af_settings_options');
     do_settings_sections(__FILE__);

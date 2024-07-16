@@ -6,7 +6,7 @@ $af_all_posts_data = [];
 
 $af_current_post_number = 0;
 
-$af_shortcodes = ['af_footnote', 'af'];
+$af_shortcodes = ['fn_footnote', 'fn'];
 
 // set default options, if they have not been set
 if ($af_settings_options === FALSE) {
