@@ -17,6 +17,7 @@
 
 .af-footnote a {
   text-decoration: none;
+  font-size: inherit !important;
 }
 
 .af-footnote__note {
