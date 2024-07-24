@@ -8,7 +8,7 @@
             onClick: function () {
                 props.onChange(wp.richText.toggleFormat(
                     props.value,
-                    { type: 'af/footnote' }
+                    { type: 'fn/footnote' }
                 ));
             },
             isActive: props.isActive,
@@ -16,9 +16,9 @@
         );
     }
     wp.richText.registerFormatType(
-        'af/footnote', {
+        'fn/footnote', {
         title: 'Amebae Footnote',
-        tagName: 'af',
+        tagName: 'fn',
         className: null,
         edit: AfFootnotesButton
     }

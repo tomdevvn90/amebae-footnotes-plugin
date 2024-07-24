@@ -10,13 +10,13 @@
 				editor.focus();
 				var content = editor.selection.getContent();
 				if (content.length > 0) {
-					if (content.indexOf('[af_footnote]') == -1 && content.indexOf('[/af_footnote]') == -1 &&
-						content.indexOf('[af]') == -1 && content.indexOf('[/af]') == -1) {
-						editor.selection.setContent('[af]' + content + '[/af]');
-					} else if (content.indexOf('[af_footnote]') != -1 && content.indexOf('[/af_footnote]') != -1) {
-						editor.selection.setContent(content.replace(/\[af\_footnote\]/, '').replace(/\[\/af\_footnote\]/, ''));
-					} else if (content.indexOf('[af]') != -1 && content.indexOf('[/af]') != -1) {
-						editor.selection.setContent(content.replace(/\[af\]/, '').replace(/\[\/af\]/, ''));
+					if (content.indexOf('[fn_footnote]') == -1 && content.indexOf('[/fn_footnote]') == -1 &&
+						content.indexOf('[fn]') == -1 && content.indexOf('[/fn]') == -1) {
+						editor.selection.setContent('[fn]' + content + '[/fn]');
+					} else if (content.indexOf('[fn_footnote]') != -1 && content.indexOf('[/fn_footnote]') != -1) {
+						editor.selection.setContent(content.replace(/\[fn\_footnote\]/, '').replace(/\[\/fn\_footnote\]/, ''));
+					} else if (content.indexOf('[fn]') != -1 && content.indexOf('[/fn]') != -1) {
+						editor.selection.setContent(content.replace(/\[fn\]/, '').replace(/\[\/fn\]/, ''));
 					} else {
 						//we don't have a full tag in the selection, do nothing
 					}
@@ -29,7 +29,7 @@
 							label: 'Footnote'
 						}],
 						onsubmit: function( e ) {
-							editor.insertContent( '[af]' + e.data.footnote + '[/af]');
+							editor.insertContent( '[fn]' + e.data.footnote + '[/fn]');
 						}
 					});
 				}
