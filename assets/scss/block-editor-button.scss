@@ -6,8 +6,8 @@
     padding: 5px;
 }
 
-.block-editor-rich-text__editable>af:first-of-type::before {
-    content: "footnote";
+.block-editor-rich-text__editable>fn:first-of-type::before {
+    content: "fn";
     color: #888;
     font-size: 12px;
     position: relative;
@@ -16,7 +16,7 @@
     margin-left: 3px;
 }
 
-af {
+fn {
     background: #ccc;
 }
 

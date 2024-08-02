@@ -8,6 +8,11 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(jQuery) {jQuery(function ($) {
+  $(document).ready(function () {
+    if ($('div.helpful').length > 0) {
+      $("#af-reference-ls").insertBefore("div.helpful");
+    }
+  });
   $(document).on('mouseenter', '.af-footnote.af-footnote--hover-on-desktop a', null, function (e) {
     if ($(window).width() >= 768) {
       window.modernFootnotesActivelyHovering = true;
@@ -199,9 +204,9 @@ function af_show_tooltip_footnote($footnoteElement, doNotTransferFocus, addition
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\rimki\Local Sites\admin\app\public\wp-content\plugins\amebae-footnotes\assets\js\app.js */"./assets/js/app.js");
-__webpack_require__(/*! C:\Users\rimki\Local Sites\admin\app\public\wp-content\plugins\amebae-footnotes\assets\scss\styles.scss */"./assets/scss/styles.scss");
-module.exports = __webpack_require__(/*! C:\Users\rimki\Local Sites\admin\app\public\wp-content\plugins\amebae-footnotes\assets\scss\block-editor-button.scss */"./assets/scss/block-editor-button.scss");
+__webpack_require__(/*! /Users/trancongtap/Documents/Beplus-Projects/myconnect-staging/wp-content/plugins/amebae-footnotes-plugin/assets/js/app.js */"./assets/js/app.js");
+__webpack_require__(/*! /Users/trancongtap/Documents/Beplus-Projects/myconnect-staging/wp-content/plugins/amebae-footnotes-plugin/assets/scss/styles.scss */"./assets/scss/styles.scss");
+module.exports = __webpack_require__(/*! /Users/trancongtap/Documents/Beplus-Projects/myconnect-staging/wp-content/plugins/amebae-footnotes-plugin/assets/scss/block-editor-button.scss */"./assets/scss/block-editor-button.scss");
 
 
 /***/ })

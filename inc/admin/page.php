@@ -25,11 +25,11 @@ function af_footnotes_options()
     echo '<p><code><b>[fn]This footnote will automatically numbered[/fn]</b></code></p>';
     echo '<p><code><b>[fn class=’my-custom-class’]This footnote will have ‘my-custom-class’ as additional class, allowing for custom styling of individual footnotes.[/fn]</b></code></p>';
     echo '<p><code><b>[fn referencereset=’true’]This footnote will reset the footnote counter and therfore receive 1 as its number. Following footnotes will also receive their number according to this new start.[/fn]</b></code></p>';
-    echo '<form method="post" action="options.php">';
-    settings_fields('af_settings_options');
-    do_settings_sections(__FILE__);
-    submit_button();
-    echo '</form>';
+    // echo '<form method="post" action="options.php">';
+    // settings_fields('af_settings_options');
+    // do_settings_sections(__FILE__);
+    // submit_button();
+    // echo '</form>';
     echo '</div>';
 }
 

@@ -1,5 +1,11 @@
 jQuery(function ($) {
 
+    $(document).ready(function() {
+        if ( $('div.helpful').length > 0 ) {
+            $("#af-reference-ls").insertBefore("div.helpful");
+        }
+    });
+
     $(document).on('mouseenter', '.af-footnote.af-footnote--hover-on-desktop a', null, function (e) {
         if ($(window).width() >= 768) {
             window.modernFootnotesActivelyHovering = true;
